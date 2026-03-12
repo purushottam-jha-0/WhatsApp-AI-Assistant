@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 250px; padding: 15px; font-family: sans-serif; }
+    input, select, button { width: 100%; margin-bottom: 10px; padding: 8px; }
+    button { background-color: #008069; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #006c59; }
+  </style>
+</head>
+<body>
+  <h3>AI Settings</h3>
+  <label>Groq API Key (Free):</label>
+  <input type="password" id="apiKey" placeholder="Paste Groq API Key here">
+  
+  <label>Tone:</label>
+  <select id="tone">
+    <option value="Casual">Casual</option>
+    <option value="Formal">Formal</option>
+    <option value="Friendly">Friendly</option>
+  </select>
+
+  <button id="saveBtn">Save Settings</button>
+  <p id="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
